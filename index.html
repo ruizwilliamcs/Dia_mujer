@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para DAYANE 💜</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(180deg,#6a0dad,#ff4da6);
+color:white;
+text-align:center;
+overflow:hidden;
+}
+
+.container{
+padding:40px 20px;
+}
+
+.nombre{
+font-size:42px;
+font-weight:bold;
+background:linear-gradient(90deg,#fff,#ffd6f2,#fff);
+background-size:200%;
+background-clip:text;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:brillo 3s linear infinite;
+}
+
+@keyframes brillo{
+0%{background-position:0%;}
+100%{background-position:200%;}
+}
+
+h1{
+font-size:30px;
+}
+
+button{
+
+background:white;
+color:#6a0dad;
+border:none;
+padding:16px 26px;
+margin:15px;
+font-size:18px;
+border-radius:30px;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+button:active{
+transform:scale(0.9);
+}
+
+.rosa{
+position:absolute;
+font-size:22px;
+animation:caer linear infinite;
+}
+
+@keyframes caer{
+0%{transform:translateY(-50px)}
+100%{transform:translateY(110vh)}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="musica/cancion.mp3">
+</audio>
+
+<div class="container">
+
+<h1>🌸 Feliz Día de la Mujer mi Amor🌸</h1>
+
+<p>Un pequeño detalle para la mujer mas hermosa del mundo</p>
+
+<div class="nombre">Mi vida DAYANE</div>
+
+<p>
+    Corazón de mi vida este dia tan especial,
+    te presento este pequeño detalle
+    y recordarte cuánto significas para mí.
+</p>
+
+<button onclick="location.href='carta.html'">
+💌 Leer carta
+</button>
+
+<br>
+
+<button onclick="location.href='recuerdos.html'">
+📸 Ver recuerdos
+</button>
+
+</div>
+
+<script>
+
+for(let i=0;i<30;i++){
+
+let r=document.createElement("div")
+
+r.className="rosa"
+
+r.innerHTML="🌹"
+
+r.style.left=Math.random()*100+"%"
+
+r.style.animationDuration=(5+Math.random()*5)+"s"
+
+document.body.appendChild(r)
+
+}
+
+</script>
+
+</body>
+</html>
